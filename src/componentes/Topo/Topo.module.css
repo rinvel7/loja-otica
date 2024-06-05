@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  padding: 10px 220px;
+  
+}
+
+.container_topo{
+    width: 1024px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.img_logo {
+    width: auto;
+    height: 50px;
+  }
+
+  .link_nav {
+    margin: 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  
+  @media (max-width: 1024px) {
+    .container {
+      padding: 10px 30px;
+      
+    }
+
+    .container_topo {
+      width: auto;
+    }
+  
+  }
+  
+  @media (max-width: 550px) {
+    .container_topo {
+      flex-direction: column;
+    }
+  
+    .link_nav {
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+      margin-top: 10px;
+      border-top: 1px solid #aaadaf;
+    }
+  
+  }
+
+  @media (max-width: 375px) {
+    .container_topo {
+      height: 90px;
+    }
+  
+    .link_nav {
+      border-top: 1px solid #aaadaf;
+    }
+
+    
+  
+  }

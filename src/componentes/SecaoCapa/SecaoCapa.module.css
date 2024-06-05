@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    height: 80vh;
+    padding-left: 200px;
+    background: linear-gradient(47deg, #000113 0%, #04061D 80%, #04061D 100%);
+    background-image: url('../../../public/capa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  
+  }
+  
+.container_capa {
+    padding: 20px;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+.container_capa p,
+.container_capa h1
+  { 
+    max-width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+.container_capa p {
+    font-size: 30px;
+    color: rgb(196, 196, 196);
+  }
+  
+.container_capa h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 55px;
+    margin: 0;
+    line-height: 70px;
+    letter-spacing: 5px;
+  }
+
+  @media (max-width: 1024px) {
+
+    .container {
+      padding-left: 20px;
+      background-position: 85% center;
+     
+    }
+    
+
+    .container_capa h1 {
+      font-size: 40px;
+      line-height: 1.3em;
+    }  
+  }
+
+@media (max-width: 768px) {
+
+    .container_capa h1 {
+      font-size: 40px;
+    }
+
+    .container_capa p {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .container_capa {
+      background-position: 89% center;
+    }
+
+  }
+
+  @media (max-width: 375px) {
+
+    .container {
+      padding-left: 0;
+     
+    }    
+    .container_capa {
+      padding-left: 50px;
+    }
+   
+  }
